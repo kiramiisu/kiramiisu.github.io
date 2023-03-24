@@ -1,0 +1,357 @@
+/* Use this stylesheet to add your UI details, and to overwrite layout details for specific instances. */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    background-color: #121E4A;
+    color: tan;
+}
+
+
+/* Style the typography */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+
+/* Style the header */
+header {
+    padding: 30px;
+}
+
+
+/* Style the list, list items and links inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+#hero .text-area {
+    width: 100%;
+    background: #454545;
+    color: white;
+    padding: 3em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.text-centred {
+    text-align: center;
+}
+
+#hero-sep {
+    width: 50%;
+}
+
+#creation-box {
+    padding: 1em;
+
+    background-color: tan;
+    color: #121E4A;
+    height: 10em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top: brown 1px solid;
+}
+
+#creation-box > h2 {
+    padding: 0;
+}
+
+#thanks-section, #dm-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+
+    margin: 20px;
+}
+
+#thanks {
+    width: 50%;
+}
+
+#dm-section > img {
+    rotate: 180deg;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+  
+.separator::before,
+.separator::after {
+content: '';
+flex: 1;
+border-bottom: 1px solid tan;
+margin: 0 5em;
+}
+  
+.separator:not(:empty)::before {
+margin-right: .25em;
+}
+  
+.separator:not(:empty)::after {
+margin-left: .25em;
+}
+
+/* Images */
+
+#background {
+    background-color: #121E4A;
+}
+
+#logo {
+    max-width: 12%;
+    margin: 5vw;
+}
+
+#tsukasa-container {
+    height: 320px;
+}
+
+#tsukasa, #tsukasa-eyes {
+    position: absolute;
+    left: 20%;
+    max-width: 60%;
+}
+
+/* Icons */
+
+#social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* FOR DEMO ONLY - these few rules have no inherant styling benefit, they are only to allow you to see what is happening on the page. You can still build off of them if you like, or delete them. */
+#sec-one {
+    max-width: 100vw;
+}
+
+.sec-with-columns {
+background-color: #e5e5e5;
+max-width: 100vw;
+}
+
+#sec-five {
+background-color: rgb(84, 84, 84);
+max-width: 100vw;
+min-height: 50vh;
+color: white;
+}
+
+.flex-item {
+background-color: rgb(34, 34, 34);
+color: white;
+}
+
+.flex-item.bordered {
+background-color: white;
+color: black;
+border: 1px solid #454545;
+}
+
+section .container {
+padding: 5vw;
+}
+
+.top-container {
+margin: auto;
+}
+
+.text-area {
+padding: 1em;
+}
+/* END OF FOR DEMO ONLY */
+
+/* Style the footer */
+footer {
+    width: 100%;
+    /* padding: 20px; */
+    text-align: center;    
+    color: pink;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+footer > hr {
+    width: 80%;
+    text-align: center;
+}
+
+
+
+  /* ----Responsive layout - Media queries-------- */
+
+@media (max-width: 600px) {
+
+    .flex-item {
+       width: calc(100vw - 4em);
+       height: auto;
+    }
+
+    #logo {
+        max-width: 15%;
+    }
+
+    #curtain {
+        max-width: 200vw;
+    }
+
+    section .container {
+        padding: 1vw;
+    }
+
+    #hero-space-above {
+        margin-top: 15vw;
+    }
+
+    #hero-sep {
+        margin-left: 5vw;
+        margin-top: 10vw;
+    }
+
+    #tsukasa-container {
+        height: 410px;
+    }
+
+    #creation-box {
+        position: relative;
+    }
+
+    #circle-down-arrow {
+        position: absolute;
+        bottom: 10%;
+
+        height: 30px;
+        width: 30px;
+    }
+
+
+    #dm-section > img {
+        margin-top: 30px;
+
+        width: 30px;
+        height: 30px;
+    }
+
+    #email-button {
+        border-radius: 2em;
+
+        border: none;
+        color: #121E4A;
+        background-color: tan;
+
+        padding: 0.5em 2em;
+        text-align: center;
+        text-decoration: none;
+
+        display: inline-block;
+        
+
+    }
+    /* Typography */
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1.2;
+        padding-left: 5vw;
+    }
+
+    h1 {
+        font-size: 16vw;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 9vw;
+        font-weight: bold;
+        /* line-height: .5em; */
+        align-content: center;
+    }
+
+    h3 {
+        font-size: 6vw;
+        /* line-height: .5em; */
+    }
+
+    p {
+        font-size: 4vw;
+        /* line-height: 1.25em; */
+        line-height: 1.5;
+        padding-left: 5vw;
+    }
+
+    #intro-space {
+        padding-top: 3vw;
+        padding-bottom: 4vw;
+    }
+
+    .h2-space {
+        padding-top: 25vw;
+    }
+
+
+    }
+
+
+@media (min-width: 768px) {
+
+    #hero .text-area {
+        width: 60vw;
+    }
+
+    
+}
+
+@media (min-width: 1080px) {
+
+    #hero .text-area {
+        width: 40vw;
+        margin: 15px;
+    }
+
+}
+
+@media (min-width: 1300px) {
+
+    
+}
