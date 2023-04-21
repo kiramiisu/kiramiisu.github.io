@@ -1,0 +1,37 @@
+/* Floating Toys */
+
+.float {
+    animation-name: fade-in, floating;
+    animation-duration: 1s, 2s;
+    animation-fill-mode: forwards, none;
+    animation-iteration-count: 1, infinite;
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(4%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+
+/* Pointing */

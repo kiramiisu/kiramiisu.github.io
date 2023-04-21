@@ -1,0 +1,1235 @@
+/* Body */
+
+body {
+    font-family: 'Skranji', helvetica, arial, sans-serif;
+    font-size: 2vw;
+    line-height: 1.2;
+    background-color: #0e2052;
+    color: #F7BD86;
+    text-overflow: clip;
+    box-sizing: inherit;
+}
+
+html, body {
+    max-width: 100%;
+} 
+
+/* Style the typography */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Skranji', helvetica, arial, sans-serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 8vw;
+    letter-spacing: .3rem;
+}
+
+h2 {
+    font-size: 4vw;
+    /* letter-spacing: .2rem; */
+}
+
+h3 {
+    /* font-size: 1.5em; */
+    /* letter-spacing: .1rem; */
+    font-size: .8em;
+    letter-spacing: .05rem;
+    font-weight: lighter;
+}
+
+p {
+    /* letter-spacing: .1rem; */
+    line-height: 1.5;
+}
+
+
+
+/* Style the header */
+
+header {
+    padding: 30px;
+}
+
+.social-buttons {
+    font-size: 4vw;
+    padding: 10vw 2vw;
+}
+
+#nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10vw;
+}
+
+.curtain {
+    width: 100vw;
+    z-index: 1;
+    position: fixed;
+    margin-top: -4vw;
+    z-index: 2;
+}
+
+.logo {
+    width: 10vw;
+    margin: 3vw 9vw;
+}
+
+.hide-arrow {
+    opacity: 0;
+}
+
+.hero-sep {
+    width: 20%;
+
+    color: #F7BD86;
+    border-color: #F7BD86;
+    border: none;
+    background-color: #F7BD86;
+    color: #F7BD86;
+    height: .2vh;
+}
+
+#creation-box {
+    background-color: #F7BD86;
+    color: #0e2052;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
+
+    border-top: brown 1px solid;
+}
+
+#creation-box > h2 {
+    padding: 0;
+}
+
+/* Style the list, list items and links inside the menu */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    color: #F7BD86;
+    text-decoration: none;
+}
+
+a:hover,
+.align-center:hover > .bottom-arrow-text {
+    color: #F16B97;
+}
+
+
+.back-to-top > a:hover > #rotate180,
+.align-center:hover > .rotate270,
+.align-center:hover > .rotate90,
+.arrow-hover:hover,
+.bottom-arrow:hover,
+.project-arrow:hover,
+.project-sep:hover ~ .project-line-padding > .project-flex > .project-arrow,
+.project-line-padding:hover > .project-flex > .project-arrow {
+    filter: invert(47%) sepia(96%) saturate(345%) hue-rotate(290deg) brightness(99%) contrast(92%);
+}
+
+
+
+/* Project styling */
+
+.bottom-arrow {
+    width: 5vw;
+    margin-bottom: 1vw;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.project-sep {
+    margin: 0 5vw;
+    color: #F7BD86;
+    border-color: #F7BD86;
+    border: none;
+    background-color: #F7BD86;
+    color: #F7BD86;
+    height: .2vh;
+}
+
+.project-sep:hover {
+    color: #F16B97; 
+    border-color: #F16B97;
+}
+
+#hero .text-area {
+    width: 100%;
+    background: #454545;
+    color: white;
+    padding: 3em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-centred {
+    text-align: center;
+}
+
+.project-size {
+    width: 90%;
+}
+
+.project-img {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* footer styling */
+
+#thanks-section, #dm-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    
+    margin: 20px;
+}
+
+#thanks {
+    width: 78%;
+    padding: 15vw 0 5vw;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: .2vh solid #F7BD86;
+    margin: 0 5vw;
+}
+
+.separator:not(:empty)::before {
+margin-right: .75em;
+}
+  
+.separator:not(:empty)::after {
+margin-left: .75em;
+}
+
+
+
+/* Arrow styling */
+
+#rotate180 {
+    transform: rotate(180deg)
+}
+
+.rotate270 {
+    transform: rotate(270deg)
+}
+
+.rotate90 {
+    transform: rotate(90deg)
+}
+
+.project-arrow {
+    max-width: 10%;
+}
+
+.arrow {
+    max-width: 5vw;
+    min-width: 5vw;
+    margin-top: 3vw;
+}
+
+
+
+/* Buttons */
+
+#email-button {
+    background-image: url("images/button.svg");
+    background-repeat: no-repeat;
+    border: none;
+    color:  #0e2052;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 6vw;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-flex {
+    display: flex;
+    justify-content: center;
+}
+
+#email-button:hover {
+    background-image: url("images/button_hover_pink.svg");
+    color: #121E4A;
+}
+
+#email-button:active {
+    transform: scale(1.1) perspective(1px);
+}
+
+
+  
+
+/* Images */
+
+
+.rope {
+    position: absolute;
+    left: 85vw;
+}
+
+.rope:hover {
+    transform: scale(1.1) perspective(1px) translatey(20px);
+}
+
+#pupil {
+    z-index: 1;
+}
+
+/* #pupil:after {
+    position: absolute;
+    bottom: 17px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    content: " ";
+  } */
+
+.project-imgs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2vw;
+}
+
+.project-img-padding {
+    padding: 0 10vw;
+}
+
+#tsukasa, .tsukasa-eyes {
+    position: absolute;
+
+}
+
+.iris {
+    z-index: 0;
+}
+
+/* Icons */
+
+#social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-padding-right {
+    padding-right: 25vw;
+}
+
+.social-buttons > a:active > i {
+    transform: scale(1.1) perspective(1px);
+}
+
+section .container {
+padding: 5vw;
+}
+
+.top-container {
+margin: auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;    
+    color: #F7BD86;
+}
+
+footer > hr {
+    text-align: center;
+    margin: 0 13vw;
+    color: #F7BD86;
+    border-color: #F7BD86;
+}
+
+.back-to-top {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5vw;
+}
+
+.top {
+    text-transform: uppercase; 
+    padding: 2vw 0 0; 
+}
+
+#back-link {
+    text-decoration: underline;
+}
+
+#navi-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navi-container > a {
+    display: flex;
+    flex-flow: column;
+}  
+
+#project-img-padding-bottom {
+    padding-bottom: 5vw;
+}
+
+.bottom-links {
+    display: flex;
+    flex-flow: column;
+}
+
+#process-container {
+    display: flex;
+    flex-flow: row;
+}
+
+#process-vl {
+    border-right: .2vw solid #F7BD86;
+    flex: .1;
+    margin-top: 2vw;
+}
+
+#process-text {
+    flex: 4;
+    padding: 2vw;
+}
+
+.border {
+    border-radius: 50px;
+    margin-top: 5vw;
+}
+
+
+
+  /* ----Responsive layout - Media queries-------- */
+
+@media (max-width: 1079px) {
+
+    .border {
+        border-radius: 12px;
+        margin-top: 5vw;
+    }
+
+    /* .project-imgs {
+        padding: 4vw 10vw;
+        border-radius: 0;
+    } */
+
+    #process-vl {
+        border-right: .4vw solid #F7BD86;
+        margin-top: 7.5vw;
+    }
+
+    #process-text {
+        margin: 5vw 0;
+    }
+
+    #project {
+        padding: 0 0 5vw;
+    }
+
+    #nav-flex-project > div {
+        margin-right: 5vw;
+    }
+
+    .bottom-arrow-text {
+        padding: 0;
+    }
+
+    .flex-item {
+       width: calc(100vw - 4em);
+       height: auto;
+    }
+
+    #back-link {
+        font-size: 5.5vw;
+    }
+
+    #chat-padding {
+        padding: 0 0 5vw;
+    }
+
+    .project-intro {
+        padding-top: 3vw;
+        padding-right: 14vw;
+        margin-bottom: 5vw;
+    }
+
+    /* .project-title {
+        padding-top: 1rem;
+    } */
+
+    #process-container {
+        padding-left: 5vw;
+        padding-right: 6vw;
+    }
+
+    .rope {
+        width: 11vw;
+        top: 3%;
+        left: 80vw;
+    }
+
+    .rope:hover {
+        transform: scale(1.1) perspective(1px) translatey(10px);
+    }
+    #creation-box {
+        padding-top: 17%;
+        padding-bottom: 12%;
+    }
+
+    #lisa-frank {
+        width: 100%;
+        margin-top: 5vw;
+    }
+
+    #lisa-frank-padding {
+        margin-bottom: 5vw;
+    }
+
+    .logo {
+        min-width: 25vw;
+        margin: 5vw;
+    }
+    
+
+    #nav-flex {
+        gap: 1vw;
+        padding-top: 7vw;
+    }
+
+    #nav-flex-project {
+        padding-bottom: 0;
+        padding-top: 5vw;
+    }
+
+    .project-process-img {
+        width: 100%;
+        padding-bottom: 6vw;
+    }
+
+    .bottom-arrow {
+        width: 13vw;
+    }
+
+    #curtain {
+        position: absolute;
+        transform: scale(4);
+        width: 150vw;
+    }
+
+    .hero-sep {
+        margin-left: 5vw;
+        margin-top: 2vw;
+        height: 0.4vw;
+    }
+
+    /* section .container {
+        padding-top: 12vw;
+    } */
+
+    #hero-space-above {
+        padding-top: 15vw;
+    }
+
+
+    #tsukasa-container {
+        height: 122vw;
+        display: flex;
+        justify-content: center;
+        margin-left: 3vw;
+    }
+
+    #tsukasa, .tsukasa-eyes {
+        width: 80vw;
+    }
+
+    #creation-box {
+        position: relative;
+    }
+
+    .arrow {
+        max-width: 10vw;
+        min-width: 10vw;
+    }
+
+    .project-sep {
+        margin: 0 10vw;
+        /* height: .4vw; */
+    }
+    
+    .project {
+        padding: 20% 5% 10%;
+    }
+
+    .project-line-padding {
+        padding-top: 3vw;
+        margin-left: 5vw;
+    }
+
+    #rings {
+        position: absolute;
+        transform: rotate(210deg);
+        width: 39vw;
+        left: 5vw;
+        margin-top: 109%;
+        z-index: 1;
+      }
+
+    .rope {
+        width: 12vw;
+        top: 2vh;
+        left: 74vw;
+      }
+
+      #flag {
+        position: absolute;
+        width: 17vw;
+        left: 6vw;
+        margin-top: 152%;
+        z-index: 1;
+      }
+
+
+      #red-cube {
+        position: absolute;
+        width: 20vw;
+        left: 22vw;
+        margin-top: 163vw;
+        z-index: 1;
+      }
+
+    .project-sizing {
+        padding: 8vw 5vw;
+        width: 100vw;
+    }
+
+    .project-flex {
+        display: flex;
+        gap: 1.5em;
+    }
+
+    #dm-section > img {
+        margin-top: 30px;
+
+        width: 12vw;
+        height: 12vw;
+    }
+
+    #chat-call {
+        padding: 0;
+    }
+
+    #or {
+        padding: 2vw 0 0;
+    }
+
+    .social-buttons {
+        font-size: 9vw;
+        padding: 5vw 2vw 5vw;
+    }
+
+    .social-buttons > a {
+        color: #F7BD86;
+    }
+
+    .social-buttons > a:hover {
+        color: #F16B97;
+    }
+
+    #email-button {
+        width: 70vw;
+        height: 18vw;
+    }
+
+    #footer-img {
+        max-width: 100%;
+        position: absolute;
+    }
+
+    /* Typography */
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Skranji', helvetica, arial, sans-serif;
+        line-height: 1.3;
+        padding-left: 5vw;
+
+    }
+
+    h1 {
+        font-size: 16vw;
+        letter-spacing: 2px;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 9vw;
+        align-content: center;
+    }
+
+    h3 {
+        font-size: 4vw;
+        font-weight: inherit;
+    }
+
+    p {
+        font-size: 4.5vw;
+        line-height: 1.5;
+        padding-left: 5vw;
+        /* letter-spacing: .03rem; */
+    }
+
+    #intro-space {
+        padding-top: 3vw;
+        padding-bottom: 4vw;
+    }
+
+    .h2-space {
+        padding-top: 25vw;
+    }
+
+
+    .copyright {
+        padding: 2vw 0;
+    }
+
+    #navi-container {
+        padding: 10vh 5vh 0;
+    }
+
+
+    #process-vl {
+        flex: .1;
+    }
+
+    .project-arrow:hover {
+        filter: invert(47%) sepia(96%) saturate(345%) hue-rotate(290deg) brightness(99%) contrast(92%);
+    }
+
+    .question {
+        font-size: 6vw;
+        line-height: 1.3;
+    }
+
+    #cylinder {
+        position: absolute;
+        width: 20vw;
+        left: 67vw;
+        margin-top: 114%;
+        z-index: 1;
+      }
+
+      #triangle-blue {
+        position: absolute;
+        width: 18vw;
+        left: 69vw;
+        margin-top: 157vw;
+        z-index: 1;
+      }
+
+      .text-area {
+        padding-top: 5vh;
+    }
+
+    #nav-flex-project {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-bottom: 5vw;
+    }
+
+    .foot {
+        bottom: 0;
+        position: absolute;
+        background-image: url('images/stuffies.jpg');
+        z-index: 2;
+
+        background-size: 104%;
+        background-position: bottom;
+        background-repeat: repeat-x;
+
+        width: 100%;
+        height: 100%;
+        
+      }
+    
+
+    .bottom {
+        position: relative;
+        height: 30vw;
+        width: 100%;
+        overflow: hidden;
+    }
+
+}
+
+
+
+@media (min-width: 1080px) {
+
+    #project {
+        padding: 0 0 5vw;
+    }
+
+    /* .text-area {
+        padding-top: 5vh;
+    } */
+
+    .rope {
+        width: 8vw;
+        top: 2%;
+        left: 82vw;
+    }
+
+    .question {
+        font-size: 2vw;
+        line-height: 1.3;
+    }
+
+    #process-text {
+        padding-right: 25vw;
+    }
+
+    #rings {
+        position: absolute;
+        transform: rotate(210deg);
+        width: 30vw;
+        left: 11vw;
+        margin-top: -17%;
+      }
+
+    #cylinder {
+        position: absolute;
+        width: 18vw;
+        left: 78vw;
+        z-index: 1;
+      }
+
+      #flag {
+        position: absolute;
+        width: 14vw;
+        left: 6vw;
+        margin-top: 7vw;
+      }
+
+      #red-cube {
+        position: absolute;
+        width: 19vw;
+        left: 9vw;
+        margin-top: 25vw;
+        z-index: 1;
+    }
+
+      #triangle-blue {
+        position: absolute;
+        width: 13vw;
+        left: 69vw;
+        margin-top: 27vw;
+        z-index: 1;
+      }
+
+      .project-sizing {
+        padding: 5vw 10vw;
+        width: 100vw;
+    }
+    
+    .separator::before,
+    .separator::after {
+    margin: 0 10vw;
+}
+
+    #rebrand {
+        width: 85%;
+    }
+
+    .project-intro {
+        padding-top: 3vw;
+        padding-right: 40vw;
+        margin-bottom: 6vw;
+    }
+
+    .hero-sep {
+        width: 15%;
+        height: .2vw;
+    }
+
+    .project-title {
+        padding-bottom: 2vw;
+        /* padding-top: 1rem; */
+    }
+
+    section .container {
+        padding: 0vw 15vw 0 9vw;
+    }
+
+    #lisa-frank {
+        margin-top: 5vw;
+    }
+
+    #hero .text-area {
+        width: 40vw;
+        margin: 15px;
+    }
+    
+    .project-sep {
+        margin: 0 10vw;
+    }
+
+    #email-button {
+        font-size: 3vw;
+        width: 33vw;
+        height: 8vw;
+    }
+
+    .tsukasa-eyes, #tsukasa {
+        max-width: 40vw;
+        /* margin-top: -4vw; */
+    }
+
+    #intro-space {
+        padding-top: 2vw;
+        padding-bottom: 4vw;
+    }
+
+    #tsukasa-container {
+        position: absolute;
+        width: fit-content;
+        right: 40%;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+
+    #creation-box {
+        height: 56%;
+        padding-top: 14%;
+        padding-bottom: 12%;
+    }
+
+    .project-line-padding {
+        padding-left: 10vw;
+        padding-top: 2vw;
+    }
+    
+    .project-flex {
+        display: flex;
+        gap: 1em;
+    }
+
+    .project-arrow {
+        max-width: 5%;
+    }
+
+    #nav-flex {
+        padding-bottom: 10vw;
+        padding-top: 5vw;
+    }
+
+    .foot {
+        bottom: 0;
+        position: absolute;
+        background-image: url('images/stuffies.jpg');
+        z-index: 2;
+
+        background-size: 35%;
+        background-position: bottom;
+        background-repeat: repeat-x;
+
+        width: 100%;
+        height: 100%;
+        
+      }
+    
+
+    .bottom {
+        position: relative;
+        height: 10vw;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #nav-flex-project {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        padding-right: 10vw;
+        padding-top: 5vw;
+    }
+
+    #thanks {
+        font-size: 2em;
+        padding: 10vw 0 2vw;
+    }
+
+    #chat-padding {
+        padding: 0 0 8vw;
+    }
+
+    #back-link {
+        font-size: 2.5vw;
+    }
+
+    #or {
+        padding: 3vw 0;    
+    }
+
+    .social-buttons {
+        padding: 2vw;  
+    }
+
+    #navi-container {
+        padding: 10vh 10vw 0;
+    }
+
+    .copyright {
+        padding: 2vw 0;
+    }
+
+    #process-container {
+        padding-top: 5vw;
+    }
+
+}
+
+@media (min-width: 1500px) {
+
+    /* .project-imgs {
+        padding: 5vw 10vw;
+    } */
+
+    #rings {
+        position: absolute;
+        transform: rotate(210deg);
+        width: 26vw;
+        left: 14vw;
+        margin-top: -11%;
+    }
+
+    #project {
+        padding: 0 0 5vw;
+    }
+
+    /* .text-area {
+        padding-top: 5vh;
+    } */
+
+    .rope {
+        width: 8vw;
+        top: 2%;
+        left: 82vw;
+    }
+
+    .question {
+        font-size: 2vw;
+        line-height: 1.3;
+    }
+
+    #process-text {
+        padding-right: 25vw;
+    }
+
+    #process-container {
+        padding-top: 5vw;
+    }
+
+    #cylinder {
+        position: absolute;
+        width: 18vw;
+        left: 78vw;
+        z-index: 1;
+      }
+
+      #flag {
+        position: absolute;
+        width: 14vw;
+        left: 6vw;
+        margin-top: 7vw;
+      }
+
+      #red-cube {
+        position: absolute;
+        width: 19vw;
+        left: 9vw;
+        margin-top: 25vw;
+        z-index: 1;
+    }
+
+      #triangle-blue {
+        position: absolute;
+        width: 13vw;
+        left: 69vw;
+        margin-top: 27vw;
+        z-index: 1;
+      }
+
+      .project-sizing {
+        padding: 5vw 10vw;
+        width: 100vw;
+    }
+    
+    #rebrand {
+        width: 85%;
+    }
+
+    .project-intro {
+        padding-top: 3vw;
+        padding-right: 40vw;
+    }
+
+    .hero-sep {
+        width: 14vh;
+    }
+
+    .project-title {
+        padding-bottom: 2vw;
+        /* padding-top: 1rem; */
+    }
+
+    section .container {
+        padding: 0vw 15vw 0 9vw;
+    }
+
+    #hero .text-area {
+        width: 40vw;
+        margin: 15px;
+    }
+    
+    .project-sep {
+        margin: 0 10vw;
+    }
+
+    #email-button {
+        font-size: 3vw;
+        width: 33vw;
+        height: 8vw;
+    }
+
+    .tsukasa-eyes, #tsukasa {
+        width: 33vw;
+        /* margin-top: -4vw; */
+        z-index: -1;
+        margin-left: 3vw;
+    }
+
+    #intro-space {
+        padding-top: 2vw;
+        padding-bottom: 4vw;
+    }
+
+    #tsukasa-container {
+        position: absolute;
+        width: fit-content;
+        right: 40%;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+
+    #creation-box {
+        height: 56%;
+        padding-top: 14%;
+        padding-bottom: 12%;
+    }
+
+    .project-line-padding {
+        padding-left: 10vw;
+        padding-top: 2vw;
+    }
+    
+    .project-flex {
+        display: flex;
+        gap: 1em;
+    }
+
+    .project-arrow {
+        max-width: 5%;
+    }
+
+    #nav-flex {
+        padding-right: 10vw;
+        padding-top: 5vw;
+    }
+
+    /* #nav-flex-project {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        padding-right: 10vw;
+    } */
+
+    #thanks {
+        font-size: 2em;
+        padding: 10vw 0 2vw;
+    }
+
+    #chat-padding {
+        padding: 0 0 5vw;
+    }
+
+    #back-link {
+        font-size: 2.5vw;
+    }
+
+    #or {
+        padding: 3vw 0;    
+    }
+
+    .social-buttons {
+        padding: 2vw;  
+    }
+
+    #navi-container {
+        padding: 10vh 10vw 0;
+    }
+
+    .copyright {
+        padding: 2vw 0;
+    }
+}
+
+/* HD/Retina CSS */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min-resolution: 144dpi){ 
+	
+    .foot {
+		background: url(images/stuffies@2x.jpg);
+        background-size: 35%;
+        background-position: bottom;
+        background-repeat: repeat-x;
+		/* background-size: 120px; Equal to normal logo width */
+	}
+}

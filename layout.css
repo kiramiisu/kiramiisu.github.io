@@ -1,0 +1,73 @@
+/* CORE FRAMEWORKS */
+
+.sec-with-columns {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.row.full-width {
+  justify-content: flex-start;
+}
+
+.flex-item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.flex-gap-sm {
+  gap: 10px;
+}
+.flex-gap-md {
+  gap: 20px;
+}
+.flex-gap-lg {
+  gap: 40px;
+}
+
+
+/* ----Responsive layout - Media queries-------- */
+/* You can edit the rules inside of these media queries, but you can also edit the breakpoints. */
+
+@media (max-width: 600px) {
+  /* anything you only want applied at mobile sizes can go here */
+ .flex-item {
+    width: calc(100vw - 4em);
+    height: auto;
+  }
+    
+}
+
+@media (min-width: 768px) {
+/* anything you want to kick in at small tablet and above can go here */
+
+}
+
+@media (min-width: 900px) {
+/* anything you want to kick in at large tablet and above can go here */
+
+
+ }
+
+ @media (min-width: 1300px) {
+  /* anything you want to kick in at desktop and above can go here */
+  .container {
+    max-width: 100vw;
+    /* this max-width is entirely optional, and can be edited to your fit your design. Check how your design will look on large screens by pressing CMMD- in your browser, and decide if and how you want to constrain the overall content width. */
+  }
+     
+ }
