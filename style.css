@@ -958,7 +958,7 @@ footer > hr {
     }
 
     #nav-flex {
-        padding-bottom: 10vw;
+        padding-bottom: 6vw;
         padding-top: 5vw;
     }
 
@@ -1194,14 +1194,6 @@ footer > hr {
         padding-right: 10vw;
         padding-top: 5vw;
     }
-
-    /* #nav-flex-project {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        padding-right: 10vw;
-    } */
 
     #thanks {
         font-size: 2em;
