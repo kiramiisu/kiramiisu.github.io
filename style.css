@@ -779,7 +779,7 @@ footer > hr {
     .foot {
         bottom: 0;
         position: absolute;
-        background-image: url('images/stuffies.jpg');
+        background-image: url('images/stuffies.png');
         z-index: 2;
 
         background-size: 104%;
@@ -965,7 +965,7 @@ footer > hr {
     .foot {
         bottom: 0;
         position: absolute;
-        background-image: url('images/stuffies.jpg');
+        background-image: url('images/stuffies.png');
         z-index: 2;
 
         background-size: 35%;
@@ -1230,7 +1230,7 @@ footer > hr {
 only screen and (min-resolution: 144dpi){ 
 	
     .foot {
-		background: url(images/stuffies@2x.jpg);
+		background: url(images/stuffies@2x.png);
         background-size: 35%;
         background-position: bottom;
         background-repeat: repeat-x;
