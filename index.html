@@ -1,390 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
-  <title>Kiramisu</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <script src="https://kit.fontawesome.com/bd70b0e427.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/agp1neu.css">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="layout.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="animations.css">
-  <link rel="icon" href="images/kiramisu_logo.svg">
-  <style>
-    @font-face {
-     font-family: customfont;
-     src: url(assets/CookieRun\ Regular.ttf);
-    }
-    </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kira's Minigame Mania</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
-
-<body>
-  <nav>
-    <img id="top-link" class="curtain" srcset="images/curtain_top.png 2x, images/curtain_top.png" src="images/curtain_top.png" alt="Pink curtain spanning the top screen.">
-    <div id="nav-flex">
-      <a href="index.html">
-        <img class="logo" src="images/kiramisu_logo.svg" alt="A graphic of Kiramisu's logo">
-      </a>
-      <div >
-        <span class="social-buttons"><a href="https://www.instagram.com/kira.miisu/" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></span>
-        <span class="social-buttons icon-padding-right"><a href="https://twitter.com/KiraMisu11" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a></span>
-      </div>
-      <!-- <img class="rope" srcset="images/rope.png 2x, images/rope.png"  src="images/rope.png" alt="Teal rope"> -->
-    </div>
-  </nav>
-
-  <section class="hero-flex">
-    <div class="container">
-      <div class="text-area" id="hero-space-above">
-        <h3>Hey there&comma;</h3>
-        <h1 class="project-title">I&apos;m Kira</h1>
-        <hr class="hero-sep">
-        <p id="intro-space">Nice to meet you &hearts;<br>
-          I like to draw and design cute things&excl;</p>
-      </div>
-    </div>
-    
-    <img class="float" id="rings" srcset="images/rings.png 2x, images/rings.png" src="images/rings.png" alt="Set of 3 colourful ring toys">
-    <img class="float" id="cylinder" srcset="images/cylinder_white.png 2x, images/cylinder_white.png" src="images/cylinder_white.png" alt="White cylinder block toy">
-    <img class="float" id="flag" srcset="images/flag.png 2x, images/flag.png" src="images/flag.png" alt="Red flag">
-    <img class="float" id="red-cube" srcset="images/cube_red.png 2x, images/cube_red.png" src="images/cube_red.png" alt="Red cube block">
-    <img class="float" id="triangle-blue" srcset="images/triangle_blue.png 2x, images/triangle_blue.png" src="images/triangle_blue.png" alt="Blue triangle block">
-
-    <div id="tsukasa-container">
-      <img id="pupil" class="tsukasa-eyes" srcset="images/tsukasa_pupils.png 2x, images/tsukasa_pupils.png" src="images/tsukasa_pupils.png" alt="Tsukasa's pupils">
-      <img id="tsukasa" srcset="images/tsukasa.png 2x, images/tsukasa.png" src="images/tsukasa.png" alt="A young boy holding a teddy bear.">
-      <img class="tsukasa-eyes iris" srcset="images/tsukasa_eyes.png 2x, images/tsukasa_eyes.png" src="images/tsukasa_eyes.png" alt="Eyes">
-    </div>
-  </section>
-
- 
- 
-  <section id="creation-section">
-    <div id="creation-box">
-      <h2>&star; My Creations &star;</h2>
-      <img class="arrow pointing-arrow" src="images/circle-down-solid-blue.svg" alt="Down arrow">
-    </div>
-  </section>
-  
-
-
-  <section>
-    <div id="lisa-frank">
-       <div id="lisa-frank-padding" class="project-imgs">
-        <video class="project-sizing" autoplay loop muted playsinline>
-          <source src="images/lisa-frank.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="project-padding">
-        <a href="google-doodle.html">
-          <hr class="project-sep">
-          <div class="project-line-padding project-link">
-             <h3>Illustration</h3>
-            <div class="project-flex">
-              <h2>Google Doodle</h2>
-              <img class="project-arrow rotate270" src="images/circle-down-solid.svg" alt="Arrow project link">
-              </div>
-          </div>
-        </a>
-       </div>
-    </div>
-  </section>
-
-
-
-  <section>
-    <div>
-       <div class="project-imgs">
-        <img class="project-sizing" srcset="images/title.png 2x, images/title.png" src="images/title.png" alt="Phone with a game called mimikku on screen">
-      </div>
-      <div class="project-padding">
-        <a href="mimikku.html">
-          <hr class="project-sep">
-          <div class="project-line-padding project-link">
-             <h3>Mobile Game</h3>
-            <div class="project-flex">
-              <h2>Mimikku</h2>
-              <img class="project-arrow rotate270" src="images/circle-down-solid.svg" alt="Arrow project link">
-              </div>
-          </div>
-        </a>
-       </div>
-    </div>
-  </section>
-
-
-
-  <section>
-    <div>
-       <div class="project-imgs">
-        <img class="project-sizing" srcset="images/infographic2-final.jpg 2x, images/infographic2-final.jpg" src="images/infographic2-final.jpg" alt="Graphic of a doughnut infographic">
-      </div>
-      <div class="project-padding">
-        <a href="infographic.html">
-          <hr class="project-sep">
-          <div class="project-line-padding project-link">
-             <h3>Infographic</h3>
-            <div class="project-flex">
-              <h2>Doughnuts</h2>
-              <img class="project-arrow rotate270" src="images/circle-down-solid.svg" alt="Arrow project link">
-              </div>
-          </div>
-        </a>
-       </div>
-    </div>
-  </section>
-
-
-
-  <section>
-    <div>
-       <div class="project-imgs">
-        <img class="project-sizing" srcset="images/mockup_ramune.png 2x, images/mockup_ramune.png" src="images/mockup_ramune.png" alt="Beverage label for a ramune soda.">
-      </div>
-      <div class="project-padding">
-        <a href="ramune.html">
-          <hr class="project-sep">
-          <div class="project-line-padding project-link">
-             <h3>Beverage Redesign</h3>
-            <div class="project-flex">
-              <h2>Ramune</h2>
-              <img class="project-arrow rotate270" src="images/circle-down-solid.svg" alt="Arrow project link">
-              </div>
-          </div>
-        </a>
-       </div>
-    </div>
-  </section>
-
-  <section>
-    <div>
-       <div class="project-imgs">
-        <img class="project-sizing" srcset="images/trifoldbrochure-mockup.png 2x, images/trifoldbrochure-mockup.png" src="images/trifoldbrochure-mockup.png" alt="Map of Fort Battleford with a spooky theme.">
-      </div>
-      <div class="project-padding">
-        <a href="fortbattleford.html">
-          <hr class="project-sep">
-          <div class="project-line-padding project-link">
-             <h3>Trifold Brochure Map</h3>
-            <div class="project-flex">
-              <h2>Fort Battleford</h2>
-              <img class="project-arrow rotate270" src="images/circle-down-solid.svg" alt="Arrow project link">
-              </div>
-          </div>
-        </a>
-       </div>
-    </div>
-  </section>
-
-  <section>
-    <div>
-       <div class="project-imgs">
-        <img id="rebrand" class="project-sizing" srcset="images/rebrand.png 2x, images/rebrand.png" src="images/rebrand.png" alt="Collage of photos with branded products.">
-      </div>
-      <div class="project-padding">
-        <a href="btssb.html">
-          <hr class="project-sep">
-          <div class="project-line-padding project-link">
-             <h3>Rebrand</h3>
-            <div class="project-flex">
-              <h2>BTSSB</h2>
-              <img class="project-arrow rotate270" src="images/circle-down-solid.svg" alt="Arrow project link">
-              </div>
-          </div>
-        </a>
-       </div>
-    </div>
-  </section>
-
-
-
-  <footer>
-    <section >
-      <div id="thanks-section">
-        <h2 id="thanks">Thanks for stopping by!</h2>
-        <div class="question">
-          <p id="chat-call">Interested in working together?</p>
-          <p id="chat-padding">Or just want to have a nice chat?</p>
-          <div id="button-flex">
-            <a id="email-button" href="mailto:kiramiisuu@gmail.com" >Email Me</a>
-          </div>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div id="loading" class="loading-container">
+      <h3>Loading</h3>
+      <div class="progress progress-striped active">
+        <div role="progressbar progress-striped" class="progress-bar">
+          <span></span>
         </div>
       </div>
-      <p id="or" class="separator question">OR</p>
-    </section>
-  
-  
-    <section id="dm-section">
-      <p class="question">DM me &lpar;&bull;&#7447;&lt;&rpar;&#65374;&#9734;</p>
-      <div id="social-icons">
-        <span class="social-buttons"><a href="https://www.instagram.com/kira.miisu/" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></span>
-        <span class="social-buttons"><a href="https://twitter.com/KiraMisu11" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a></span>
+    </div>
+    <section class="landing-page page">
+      <div class="menu">
+        <svg
+          class="menu-icon"
+          width="32"
+          height="31"
+          viewBox="0 0 32 31"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M1.15565 1.90373C1.79216 1.26801 2.65498 0.910933 3.55459 0.910933C4.45419 0.910933 5.31702 1.26801 5.95353 1.90373L17.2693 13.2195C17.905 13.856 18.2621 14.7188 18.2621 15.6184C18.2621 16.518 17.905 17.3808 17.2693 18.0174L5.95353 29.3331C5.31 29.9328 4.45885 30.2592 3.57938 30.2437C2.69992 30.2282 1.86081 29.8719 1.23884 29.2499C0.616863 28.628 0.260589 27.7888 0.245072 26.9094C0.229555 26.0299 0.556006 25.1788 1.15565 24.5352L10.0679 15.6184L1.15112 6.70161C0.515403 6.0651 0.158325 5.20228 0.158325 4.30267C0.158325 3.40307 0.515403 2.54024 1.15112 1.90373H1.15565ZM14.7346 1.90373C15.3711 1.26801 16.2339 0.910933 17.1335 0.910933C18.0331 0.910933 18.8959 1.26801 19.5324 1.90373L30.8482 13.2195C31.4839 13.856 31.841 14.7188 31.841 15.6184C31.841 16.518 31.4839 17.3808 30.8482 18.0174L19.5324 29.3331C18.8889 29.9328 18.0377 30.2592 17.1583 30.2437C16.2788 30.2282 15.4397 29.8719 14.8177 29.2499C14.1958 28.628 13.8395 27.7888 13.824 26.9094C13.8085 26.0299 14.1349 25.1788 14.7346 24.5352L23.6468 15.6184L14.73 6.70161C14.0943 6.0651 13.7372 5.20228 13.7372 4.30267C13.7372 3.40307 14.0943 2.54024 14.73 1.90373H14.7346Z"
+            fill="#C0BFC2"
+          />
+        </svg>
       </div>
-      <a id="back-link">Back to projects</a>
-    </section>
 
+      <div class="overlay"></div>
+      <div class="overlay-menu"></div>
 
-    <section>
-      <div>
-        <div class="back-to-top">
-          <a>
-            <img id="rotate180" class="arrow arrow-hover" src="images/circle-down-solid.svg" alt="Arrow top of page link">
-            <p class="top">Top</p> 
-          </a>
+      <nav>
+        <ul>
+          <li><a class="home" href="index.html"></a></li>
+          <li><a href="matching.html">Matching</a></li>
+          <li><a href="puzzle.html">Puzzle</a></li>
+          <li><a href="sequence.html">Sequence</a></li>
+        </ul>
+      </nav>
+      <div class="landing-page-content">
+        <h1>Kira's Minigame Mania</h1>
+        <div class="kira">
+          <p>
+            Hello and welcome! Do you like to play games? Minigames?? Fantastic!
+            Step right up and choose one from the selection
+          </p>
+          <img src="img/kira.png" alt="Illustration of Kira" />
         </div>
       </div>
-      <hr class="project-sep">
-      <p class="copyright">&copy; 2023 handmade by Kira &hearts; </p>
-      <!-- <img id="foot" src="images/stuffies.png" alt="Row of stuffed animals."> -->
-      <div class="bottom">
-        <div class="foot"></div>
+
+      <!-- volume controller -->
+      <div class="volume-container">
+        <img id="volume-button" src="img/volume.svg" alt="Volume icon" />
+        <input type="range" id="volume-control" orient="vertical" />
       </div>
+
+      <p class="credits">
+        Credit to
+        <a href="https://nobonoko.bandcamp.com/" target="_blank">Noboko</a> for
+        music
+      </p>
     </section>
-  </footer>
 
-  <script>
-    if (window.innerWidth >= 1080) {
-      window.addEventListener('load', () => {
-        let nav = document.querySelector('nav')
-        let container = document.querySelector('.hero-flex > .container')
-        let tsukasa = document.querySelector('#tsukasa')
-        let tsukasa_container = document.querySelector('#tsukasa-container')
-        
-        tsukasa_container.style.top = getComputedStyle(nav).height
-        container.style.height = getComputedStyle(tsukasa).height
-      })
-    }
+    <!-- background music -->
+    <audio id="audio" loop autoplay>
+      <source src="bgm/Bonjour....flac" type="audio/flac" />
+      Your browser does not support the audio element.
+    </audio>
 
-    let move_tsukasa = () => {
-      let nav = document.querySelector('nav')
-      let container = document.querySelector('.hero-flex > .container')
-      let tsukasa = document.querySelector('#tsukasa')
-      let tsukasa_eyes = document.querySelector('.tsukasa-eyes')
-      let iris = document.querySelector('.iris')
-      let tsukasa_container = document.querySelector('#tsukasa-container')
-    
-      if (window.innerWidth >= 1080) {        
-        tsukasa_container.style.right = '40%'
-        tsukasa_container.style.top = getComputedStyle(nav).height
-        // console.log(getComputedStyle(tsukasa).height)
-        container.style.height = getComputedStyle(tsukasa).height
-
-        tsukasa.style.maxWidth = '40vw'
-        tsukasa.style.width = ''
-        tsukasa_eyes.style.maxWidth = '40vw'
-        tsukasa_eyes.style.width = ''
-
-        tsukasa_container.style.height = ''
-        tsukasa_container.style.display = ''
-        tsukasa_container.style.justifyContent =''
-      }
-      else {
-        tsukasa_container.style.height = '122vw'
-        tsukasa_container.style.display = 'flex'
-        tsukasa_container.style.justifyContent = 'center'
-        container.style.height = ''
-
-        tsukasa.style.maxWidth = ''
-        tsukasa.style.width = '80vw'
-        tsukasa_eyes.style.maxWidth = ''
-        tsukasa_eyes.style.width = '80vw'
-        tsukasa.style.marginTop = ''
-        tsukasa_eyes.style.marginTop = ''
-      }
-    }
-    
-    window.onresize = move_tsukasa;
-    
-    let scroll_top = () => {
-      window.scrollTo({top: 0, behavior: 'smooth'})
-    }
-
-    let scroll_project = () => {
-      let creation_section = document.querySelector('#creation-section')
-      let proj_start = creation_section.getBoundingClientRect().top
-      window.scrollBy({top: proj_start, behavior: 'smooth'})
-    }
-
-    let top_button = document.querySelector('#rotate180')
-    let top_text = document.querySelector('.top')
-    top_button.addEventListener('click', scroll_top)
-    top_text.addEventListener('click', scroll_top)
-
-    let proj_text = document.querySelector('#back-link')
-    proj_text.addEventListener('click', scroll_project)
-  </script>
-
-  <script>
-    const eye1 = document.querySelector('.tsukasa-eyes');
-    window.addEventListener('mousemove', (evt) => {
-      if (window.innerWidth >= 1080) {
-      const tsukasa_computed = getComputedStyle(tsukasa)
-      const tsukasa_bounding = tsukasa.getBoundingClientRect()
-      const tsukasa_w_str = tsukasa_computed.width;
-      const tsukasa_h_str = tsukasa_computed.height;
-      const tsukasa_w = parseInt(tsukasa_w_str.substring(0, tsukasa_w_str.indexOf('px')))
-      const tsukasa_h = parseInt(tsukasa_h_str.substring(0, tsukasa_h_str.indexOf('px')))
-      
-      const centerX = tsukasa_bounding.x + tsukasa_w / 2;
-      const centerY = tsukasa_bounding.y + tsukasa_h / 2;
-
-      let x = -(centerX - evt.pageX) / 80;
-      let y = -(centerY - evt.pageY) / 80;
-      y = Math.min(y, 15)
-      y = Math.max(y, -10)
-      x = Math.min(x, 15)
-      x = Math.max(x, -15)
-      eye1.style.transform = `translateY(${y}px) translateX(${x}px)`;
-    }
-    else {
-      let centerX = window.innerWidth / 2;
-      let centerY = window.innerHeight / 2;
-      
-      let x = -(centerX - evt.pageX) / 60;
-      let y = -(centerY - evt.pageY) / 60;
-      y = Math.min(y, 10)
-      x = Math.max(x, -10)
-      eye1.style.transform = `translateY(${y}px) translateX(${x}px)`;
-    }
-    });  
-  </script>
-
-<script>
-  const eye2 = document.querySelector('.iris');
-  let tsukasa = document.querySelector('#tsukasa');
-  window.addEventListener('mousemove', (evt) => {
-    if (window.innerWidth >= 1080) {
-      const tsukasa_computed = getComputedStyle(tsukasa)
-      const tsukasa_bounding = tsukasa.getBoundingClientRect()
-      const tsukasa_w_str = tsukasa_computed.width;
-      const tsukasa_h_str = tsukasa_computed.height;
-      const tsukasa_w = parseInt(tsukasa_w_str.substring(0, tsukasa_w_str.indexOf('px')))
-      const tsukasa_h = parseInt(tsukasa_h_str.substring(0, tsukasa_h_str.indexOf('px')))
-      const centerX = tsukasa_bounding.x + tsukasa_w / 2;
-      const centerY = tsukasa_bounding.y + tsukasa_h / 2
-      let x = -(centerX - evt.pageX) / 100;
-      let y = -(centerY - evt.pageY) / 100;
-      y = Math.min(y, 5)
-      y = Math.max(y, -10)
-      x = Math.min(x, 5)
-      x = Math.max(x, -10)
-      eye2.style.transform = `translateY(${y}px) translateX(${x}px)`;
-    }
-    else {
-      let centerX = window.innerWidth / 2;
-      let centerY = window.innerHeight / 2;
-      
-      const x = -(centerX - evt.pageX) / 100;
-      let y = -(centerY - evt.pageY) / 100;
-      y = Math.min(y, 5)
-      eye2.style.transform = `translateY(${y}px) translateX(${x}px)`;
-    }
-  });  
-</script>
-
-</body>
+    <!-- sound effects -->
+    <!-- <div class="hidden">
+      <audio src="se/ui_button_highlight.wav" data-sound="button-hover"></audio>
+      <audio src="se/ui_button_press.wav" data-sound="button-press"></audio>
+      <audio src="se/ui_treasurecard_reward.wav" data-sound="complete"></audio>
+      <audio src="se/ui_spellcard_invalidclick.wav" data-sound="fail"></audio>
+    </div> -->
+    <script src="js/loading.js"></script>
+    <script src="js/common.js"></script>
+  </body>
 </html>

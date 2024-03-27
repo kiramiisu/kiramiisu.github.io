@@ -1,0 +1,74 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  cursor: url("../img/cursor.svg"), pointer;
+  /* perspective: 800px; */
+}
+
+.memory-game {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.memory-card {
+  width: clamp(150px, 20vw, 200px);
+  height: clamp(150px, 20vw, 200px);
+  margin: 0.5em;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+    cursor: url("../img/pointer.svg"), pointer;
+  }
+  &:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+  }
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  position: absolute;
+  border-radius: 1em;
+  background: #1a1929;
+  backface-visibility: hidden;
+  border: 10px solid #383653;
+}
+
+.front-face {
+  background: #1a1929;
+  border: 10px solid #383653;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+  backface-visibility: visible;
+}

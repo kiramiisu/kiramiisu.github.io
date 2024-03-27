@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/puzzle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="menu">
+      <svg
+        class="menu-icon"
+        width="32"
+        height="31"
+        viewBox="0 0 32 31"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1.15565 1.90373C1.79216 1.26801 2.65498 0.910933 3.55459 0.910933C4.45419 0.910933 5.31702 1.26801 5.95353 1.90373L17.2693 13.2195C17.905 13.856 18.2621 14.7188 18.2621 15.6184C18.2621 16.518 17.905 17.3808 17.2693 18.0174L5.95353 29.3331C5.31 29.9328 4.45885 30.2592 3.57938 30.2437C2.69992 30.2282 1.86081 29.8719 1.23884 29.2499C0.616863 28.628 0.260589 27.7888 0.245072 26.9094C0.229555 26.0299 0.556006 25.1788 1.15565 24.5352L10.0679 15.6184L1.15112 6.70161C0.515403 6.0651 0.158325 5.20228 0.158325 4.30267C0.158325 3.40307 0.515403 2.54024 1.15112 1.90373H1.15565ZM14.7346 1.90373C15.3711 1.26801 16.2339 0.910933 17.1335 0.910933C18.0331 0.910933 18.8959 1.26801 19.5324 1.90373L30.8482 13.2195C31.4839 13.856 31.841 14.7188 31.841 15.6184C31.841 16.518 31.4839 17.3808 30.8482 18.0174L19.5324 29.3331C18.8889 29.9328 18.0377 30.2592 17.1583 30.2437C16.2788 30.2282 15.4397 29.8719 14.8177 29.2499C14.1958 28.628 13.8395 27.7888 13.824 26.9094C13.8085 26.0299 14.1349 25.1788 14.7346 24.5352L23.6468 15.6184L14.73 6.70161C14.0943 6.0651 13.7372 5.20228 13.7372 4.30267C13.7372 3.40307 14.0943 2.54024 14.73 1.90373H14.7346Z"
+          fill="#C0BFC2"
+        />
+      </svg>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html"></a></li>
+        <li><a href="matching.html">Matching</a></li>
+        <li><a href="puzzle.html">Puzzle</a></li>
+        <li><a href="sequence.html">Sequence</a></li>
+      </ul>
+    </nav>
+
+    <div class="overlay"></div>
+    <div class="overlay-menu"></div>
+
+    <div class="modal-sequence">
+      <h2>Congrats!</h2>
+      <p>You completed all the levels</p>
+      <div>
+        <button class="play-again-button">Play Again</button>
+        <button class="back-home-button">Go Home</button>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <h1>Puzzle Game</h1>
+      <div class="board-flex">
+        <img class="completed-puzzle" src="img/10.jpg" alt="" />
+        <div id="board"></div>
+        <h2>Turns: <span id="turns">0</span></h2>
+      </div>
+    </div>
+
+    <!-- volume controller -->
+    <div class="volume-container">
+      <img id="volume-button" src="img/volume.svg" alt="Volume icon" />
+      <input type="range" id="volume-control" orient="vertical" />
+    </div>
+
+    <p class="credits">
+      Credit to
+      <a href="https://nobonoko.bandcamp.com/" target="_blank">Noboko</a> for
+      music
+    </p>
+
+    <audio id="audio" loop autoplay>
+      <source
+        src="bgm/nobonoko - NOBONOKO COMPILATION vol. 01 - 07 Planarian Puzzle.mp3"
+        type="audio/flac"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="js/puzzle.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

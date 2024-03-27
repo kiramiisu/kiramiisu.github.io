@@ -1,0 +1,5 @@
+img {
+  &:hover {
+    cursor: url("../img/pointer.svg"), pointer;
+  }
+}
